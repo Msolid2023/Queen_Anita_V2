@@ -1,24 +1,24 @@
 {
-   "name": "Queen_Anita-V2",
+   "name": "Queen_Anita_V2",
    "version": "2.5.0",
-   "description": "Multi device whatsapp bot by DeeCeeXxx.",
+   "description": "Multi device whatsapp bot by DeeCeeXxx ....",
    "main": "index.js",
    "type": "commonjs",
-   "--engines": {
-      "node": ">=20.0.0"
-   },
    "scripts": {
-      "run": "pm2 start . --deep-monitoring --attach --name Anita",
-      "asta": "pm2 start . --deep-monitoring --attach --name Anita",
-      "start": "pm2 start . --attach --name Anita",
-      "stop": "pm2 stop Anita",
-      "dbs--postinstall": "npx puppeteer@latest install --y"
+      "run": "pm2 start . --deep-monitoring --attach --name DeeCeeXxx    || node .",
+      "DeeCeeXxx ": "pm2 start . --deep-monitoring --attach --name DeeCeeXxx || node .",
+      "start": "pm2 start . --attach --name DeeCeeXxx",
+      "stop": "pm2 stop DeeCeeXxx",
+      "heroku-postbuild": "git clone https://github.com/DeeCeeXxx/Queen_Anita_V2.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
+      "fis-heroku-postbuild": "git clone https://github.com/DeeCeeXxx/Queen_Anita_V2.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
+      "postinstall": "npx puppeteer@latest install --y"
    },
-   "author": "David Cyril",
+   "author": "Itxxwasi",
    "license": "Apache-2.0",
    "dependencies": {
+      "wasitech": "npm:@distube/ytdl-core",
+      "ytdl": "npm:@distube/ytdl-core",
       "@adiwajshing/keyed-db": "^0.2.4",
-      "@distube/ytdl-core": "^4.13.5",
       "@hapi/boom": "^9.1.4",
       "@whiskeysockets/baileys": "6.6.0",
       "acrcloud": "^1.4.0",
@@ -28,6 +28,7 @@
       "axios": "^0.24.0",
       "canvas": "^2.11.2",
       "cheerio": "^1.0.0-rc.10",
+      "child_process": "^1.0.2",
       "crypto-js": "latest",
       "discord-mongoose-economy": "^1.2.0",
       "discord-xp": "^1.1.16",
@@ -53,15 +54,19 @@
       "node-fetch": "^2.6.1",
       "node-webpmux": "^3.1.0",
       "pastebin-js": "latest",
+      "path": "^0.12.7",
+      "pg": "^8.11.3",
       "pm2": "^5.2.0",
       "puppeteer": "latest",
       "qrcode": "latest",
       "secktor-pack": "latest",
       "simple-git": "^3.15.1",
       "translatte": "^3.0.1",
+      "util": "^0.12.4",
       "wa-sticker-formatter": "^4.3.2",
       "youtubei.js": "^7.0.0",
-      "ytdl-core": "^4.11.5"
+      "ytdl-core": "npm:@distube/ytdl-core",
+      "ytdl-secktor": "^0.0.1-development"
    },
    "directories": {
       "lib": "lib",
@@ -72,10 +77,10 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/DeeCeeXxx/Queen_Anita-V2.git"
+      "url": "git+https://github.com/Itxxwasi/Queen_Anita_V2.git"
    },
    "bugs": {
-      "url": "https://github.com/DeeCeeXxx/Queen_Anita-V2/issues"
+      "url": "https://github.com/Itxxwasi/Queen_Anita_V2/issues"
    },
-   "homepage": "https://github.com/DeeCeeXxx/Queen_Anita-V2#readme"
+   "homepage": "https://github.com/Itxxwasi/Queen_Anita_V2#readme"
 }
